@@ -20,12 +20,13 @@ def main():
         integer_as_number = int(user_number)
     except ValueError:
         print("Invalid integer")
+    finally:
         if user_number == random_number:
             print("YAY! You guessed the correct number!")
+            print("Thanks for playing")
         else:
             print("Random number was {0}. Try again.".format(random_number))
-    finally:
-        print("Thanks for playing")
+            print("Thanks for playing")
 
     # output
 
