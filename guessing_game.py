@@ -17,17 +17,15 @@ def main():
 
     # process
     try:
-        integer_as_number = int(user_number)
+        number_int = int(user_number)
+        if number_int == random_number:
+            print("YAY! You guessed the correct number!")
+        else:
+            print("Random number was {0}. Try again.".format(random_number))
     except ValueError:
         print("Invalid integer")
     finally:
-        if user_number == random_number:
-            print("YAY! You guessed the correct number!")
-            print("Thanks for playing")
-        else:
-            print("Random number was {0}. Try again.".format(random_number))
-            print("Thanks for playing")
-
+        print("Thanks for playing")
     # output
 
     print("\nDone.")
